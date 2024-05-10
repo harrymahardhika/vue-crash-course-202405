@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { useCartStore } from '@/stores/cart'
-import { storeToRefs } from 'pinia'
 import { onMounted, ref } from 'vue'
 
 const cartStore = useCartStore()
-// const { items } = storeToRefs(cartStore)
 const increment = (index: number) => {
   items.value[index].quantity++
 }
